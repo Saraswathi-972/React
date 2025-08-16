@@ -26,4 +26,42 @@ Namaste React Course..
 18.React is js library and it can work independently in a small portion in our app.
 19.React always identifies elements by keys not by ids. so make sure to provide unique key name along with id for each element. Otherwise it will give an warning on the console page.
 
+# Episode-2
+1.npm manages packages. It's a standard repository for all packages.
+2.run npm initi for getting npm configuration into our project.
+3.package.json is a configuration for npm.
+4.Bunddlers like webpack,parcel and wheet are used for bundling our project. Bundlers bundle our     project and push bundled project into production.
+5. There are two types of dependencies in our project
+    Dependencies and Dev Dependencies
+    Dev dependencies are used during development but dependencies are used in production also.
+6.We need to install parcel as an dev dependency.
+   npm install -D parcel
+7.package.json contains ^ or ~ for versions of dependencies but package-lock.json locks the exact version of dependecies available in the package.json.
+8.Node modules is a collection of dependencies
+9.Don't put node modules into production and don't push into github
+10.If we have package.json and package-lock.json we can re generate node modules again(npm install)
+11.npx parcel index.html-->igniting our app using parcel
+12.In normal javascript/typescript file imports are not allowed.In order to make this file as modules add type attribut in src tag.
+13.Parcel
+    -DEV Build
+    -Local Server
+    -HMR-Hot Module Replecement(Automatic page represh)
+    -File Watching Algorith - Written in C++
+    -Caching - Faster Builds
+    -Image Optimization
+    -Minification
+    -Compress
+    -Conistent hashing
+    -Code splitting
+    -Differential Bundling - support old browsers
+    -Error Handling
+    -Diagnostic
+    -Https
+    -Error Handling
+    -Tree Shaking - remove unused code
+    (read all this in parcel documentation)
+    -Different local and prod bundles
+14.npx parcle build index.html creates production ready build under dist folder
+15.
+
 

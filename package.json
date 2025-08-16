@@ -1,0 +1,30 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is Namaste React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saraswathi-972/React.git"
+  },
+  "keywords": [],
+  "author": "Akshay Shaini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saraswathi-972/React/issues"
+  },
+  "homepage": "https://github.com/Saraswathi-972/React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+
+}
