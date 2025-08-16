@@ -62,6 +62,19 @@ Namaste React Course..
     (read all this in parcel documentation)
     -Different local and prod bundles
 14.npx parcle build index.html creates production ready build under dist folder
-15.
+
+# Episode-3
+
+1.provide scripts for start and production builds under scripts in package.json
+2.Run those scripts with npm run start/build
+3.npm run start and npm start both are same(applicable only for start)
+4.JSX is html like syntax but JSX is not html
+5.Babel is JSX compiler.Transpiles JSX code into React code and parcel manages the babel
+6.For giving attributes to JSX elements we need to follow camel case naming and wrp in () if multiple lines of code
+7.Class based components and functional components
+  class based-old - uses jsx classes
+  functional components-new-uses jsx funtions
+8.React functional component is a function that return piece of jsx code;
+
 
 
