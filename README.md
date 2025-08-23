@@ -76,5 +76,14 @@ Namaste React Course..
   functional components-new-uses jsx funtions
 8.React functional component is a function that return piece of jsx code;
 
+# Episode-4
+1.Props(properties) in react can be used to pass dynamic data to the components.
+2.Pros are arguments to the function
+3.(pros)
+  const {resNmae,rating}=props it's called destructing props
+4.Config Driven UI- our website is driven by configs
+5.Array.join(",") - joins array of values with comma
+6.Whenever we are using map we need to assign unique key for each child
+7.It's recommended to use index as key suggested to use unique keys.
 
 
