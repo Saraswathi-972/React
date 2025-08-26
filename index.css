@@ -26,7 +26,7 @@
 }
 .restaurants{
     width: 200px;
-    height: 370px;
+    
     margin:5px;
     padding:5px;
 
@@ -42,4 +42,9 @@
     width: 200px;
     height: 190px;
    
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
 }

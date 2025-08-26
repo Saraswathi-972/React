@@ -1,0 +1,1 @@
+export const LOGO_URL="https://img.freepik.com/free-vector/food-delivery-logo-template_23-2148487396.jpg";

@@ -86,4 +86,21 @@ Namaste React Course..
 6.Whenever we are using map we need to assign unique key for each child
 7.It's recommended to use index as key suggested to use unique keys.
 
-
+# Episode-5
+1.Two types of export/import-Default and named
+  - export default component:
+      import component "path";
+  -export const component;
+      import {component} "path"; 
+2.When we try to export multiple things use names export
+3.we can use both named and default export for the same component as well it won't throw any error
+4.state variable-super poweful variable
+5.React Hooks
+    -They are normal JS utility functions. written by Facebook developers
+    -There are written inside React(comes automatically when we use import react)
+6.There are two important types of react hooks(others not use more)
+  -useState() - for creating state variable
+  -useEffect()
+7.Whenevre a state variable changes react will re render my component
+8.Reconciliation Algorithm(React Fiber) in React16 - new algorithm to update component -https://github.com/acdlite/react-fiber-architecture
+9.It will findout difference b/w virtul DOM objects and updated component
