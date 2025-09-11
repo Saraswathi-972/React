@@ -104,3 +104,17 @@ Namaste React Course..
 7.Whenevre a state variable changes react will re render my component
 8.Reconciliation Algorithm(React Fiber) in React16 - new algorithm to update component -https://github.com/acdlite/react-fiber-architecture
 9.It will findout difference b/w virtul DOM objects and updated component
+
+# Episode-6
+1.UseEffect() will take two arguments- first one is arrow function(callback function) and dependecy array.
+2.This callback function will be called after your component is rendered.
+3.UseEffect() method is used for first render our app and perform some action later
+4.CORS policy - browsers block calling an api from one domain to another domain.Sometimes adding chrome cors extension will bypass this CORS error.
+5.Always use optional chaining when you are trying to access data.
+6.Shimmer UI is which we show dummy page before our actual data loading.
+7.Rendering based on condition is called conditional rendering
+8.When we are using state variables if an uopdate is happned to this variable then the componengt will be re rendered again.
+9.Virtual DOM is object representation of JSX.
+10.During reconciliation cycle react find outs the difference between older virtual DOM and newer virtual DOM and renders the component
+11.Why rendering is fast-beacuse the react fiber will findout the difference between virtual DOMs and updated only the changed part
+

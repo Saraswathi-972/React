@@ -6,15 +6,15 @@ const styleCard={
 const RestaurantsComponent=(props)=>{
    const {resData}=props;
     // const {resName, cuisine, rating, delivery} = props;
-    const {name,address,base_price,city,image,avgRating}=resData;
+    const {name,deliveryTime,costForTwo,cuisines,cloudinaryImageId,avgRating}=resData;
     return(
         <div className="restaurants" style={styleCard}>
-             <img className="res-logo"alt="rest-logo" src={image} ></img>
-           <h3>{name}</h3>
-           <h4>{avgRating} Star</h4>
-          <h4>{address}</h4>
-          <h4>{base_price}</h4>
-          <h4>{city}</h4>
+            <img className="res-logo"alt="rest-logo" src={cloudinaryImageId} ></img>
+            <h3>{name}</h3> 
+            <h4>{cuisines}</h4>
+            <h4>{costForTwo}</h4>
+            <h4>{avgRating} Star</h4>
+            <h4>{deliveryTime} Mins</h4>
           
         </div>
     );
