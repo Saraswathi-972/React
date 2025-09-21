@@ -118,3 +118,20 @@ Namaste React Course..
 10.During reconciliation cycle react find outs the difference between older virtual DOM and newer virtual DOM and renders the component
 11.Why rendering is fast-beacuse the react fiber will findout the difference between virtual DOMs and updated only the changed part
 
+# Episode-7
+1.If no dependency array=>useEffect is called for every render
+2.If dependency array is empty=[]=>useEffect is called on during intial render(just once)
+3.If dependency array is [btnName]=>useEffect is called on every time when btnName is updated
+4.Never create useState variables outside of the functional component. Otherwise it will throw an error.
+5.useState() is used to create local state variable inside functional component
+6.Never use useState() inside any condtion.It will create inconsistency in program
+7.Don't create state variable inside any for loop or any function
+8.npm i react-router-dom - installs react router dom into our application
+9.RouterProvider is used to configure routing in our applicaion
+10.useRouteError() hook method is used to get more information about the error
+11.If we use <a href="/contact"> entire page will be refreshed while routing
+12.If we use <Link to="/contact"> no page refresh will happen
+13.Routing in web apps:
+   Client Side Routing: No network call is happened. It's just loads the page. All this are single page applications
+   Server Side Routing: when we try to fetch some page network call will happen to server and it willl display particular HTML page or component
+14.useParams() hook is used to read data from browser url
