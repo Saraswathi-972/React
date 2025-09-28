@@ -135,3 +135,60 @@ Namaste React Course..
    Client Side Routing: No network call is happened. It's just loads the page. All this are single page applications
    Server Side Routing: when we try to fetch some page network call will happen to server and it willl display particular HTML page or component
 14.useParams() hook is used to read data from browser url
+15.Install react-router for routing components
+
+# Episode-8
+1.Class Based Components: class className extends React.Component a class component which has render method and it's return some piece of JSX
+2.Functional component is a normal java script function which returns some piece of JSX
+3.Refer UserClass.js for this
+4.If we need to work work pros in class component must use constructor and super() inside it and then access it with this key word any where in the class
+5.We can destructor props 
+   const {name,location}=this.props
+6.Loading class based component means creating instant for this class
+7.State variables can be created inside constructor in class based components and it should be as below
+  this.state ={
+    count:0,
+  }
+ access it as this.state.count
+ 8.this.state is an object which contains all the state variables in class based component
+ 9.NEVER directly Update the state variable directly i.e this.state.count=this.state.count+1; it will result in inconsistency
+ 10.We can update state variables by calling this.setState({count:this.state.count+1,})
+ 11.Life Cycle Methods of class based component
+    1.constructor()
+    2.render()
+    3.componentDidMount() - this is called when the component is already mounted on the browser. It's mainly used for to make API calls
+    4.componentDidUpdate() - It's called for every update.To make API calls based on condition ie we can have old data and new data comparisions
+    5.componentWillUnmount()-This method is when the component is unmounted ie.when we navigate to another component(Single page application) in an application. To cleanup the data.Example:setInterval() called in ComponenetDidMount and cleaning up this interval in componentWillUnmount() with clearInterval()
+12.If we dealing with parent child class components in this case it follows below order
+    1.Parent constructor
+    2.Parent Render
+    3.First chiild constructor
+    4.First child Render
+    5.Second child constructor
+    6.Second child Render
+    7.Frist child componentDidMount
+    8.Second child componentDidMount
+    9.Parent componentDidMount
+    Read-https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+13.Render Phase-Renders all the coponents - constructor(),render()
+14.Commit Phase-Updated to DOM and componentDidMount
+15.useEffect(()=>{
+         
+        return ()=>{}; //this function is called during componentWillUnmount
+    },[]);
+16.why we are writting constructor(props) and super(props)?
+17.Why we are writting asyn before componentDidMount() ?
+   By default, React lifecycle methods (like componentDidMount) are just normal class methods.
+
+If you want to use the await keyword inside them, the method itself must be declared as async.
+
+👉 Without async, JavaScript will throw an error:
+
+SyntaxError: await is only valid in async functions
+
+🔹 What happens here
+
+async makes componentDidMount return a Promise instead of void.
+
+await pauses execution until the fetch resolves, so your code looks synchronous
