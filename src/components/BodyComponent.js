@@ -3,6 +3,7 @@ import {resList} from "../../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmmer from "./Shimmer";
 import {Link} from "react-router-dom";
+import useOnlineStatus from "../../utils/useOnlineStatus";
 
 const BodyComponent=()=>{
     const [listOfRestaurants,setListOfRestaurants]=useState([]);
@@ -20,6 +21,9 @@ const BodyComponent=()=>{
         setFilteredList(json?.data);      // now you can access restaurants
     };
     
+    const onlineStatus=useOnlineStatus();
+    
+    if(onlineStatus===false)return <h1>🔴Offline,Please check your internet connection!! </h1>;
     //conditional rendering
     return listOfRestaurants.length===0?(
         <Shimmmer/>

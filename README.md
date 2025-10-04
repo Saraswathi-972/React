@@ -192,3 +192,20 @@ SyntaxError: await is only valid in async functions
 async makes componentDidMount return a Promise instead of void.
 
 await pauses execution until the fetch resolves, so your code looks synchronous
+
+# Episode-9 (custom hooks)
+1.online Window event listener:event listener will keep track of internet status is online or offline(https://developer.mozilla.org/en-US/docs/Web/API/Window/online_event)
+2.we need to add this event lister only once on to our web page
+3.Linters are the tools which restrict the users to follow naming conventions as per react standards
+4.Chunking/code splitting/dynamic bundling/lazy loading/On demand loading: Making our app into smaller bundlers
+5.Suspense is a component provided by react which can be used with lazy loading componrnrts. It allows us to display something(fallback) when that particular lazy loading component is not loaded on the browser(in the mean time) . For viewing this on the network tab under no throttling tab select slow network
+
+# Episode-10
+1.SaSS & SCSS adds super powers to CSS and writting css becomes little more advanced and easy - not recommended
+2.Styled components are recommended and popular-npm install styled-components(https://styled-components.com/)
+3.Material UI library allows us to make our app more beautiful
+4.Bootstrap and chakra UI,ant design are other options
+5.TailWind CSS-trending-https://tailwindcss.com/- choose it for parcel under framework guides
+6.postcss - a tool for transforming CSS with javascript and used to understand what's written with tailwind css
+7.use npm install -D tailwindcss postcss
+8.we need to cretae tailwind.config.js and .psotcssrc files manually and provide configurations

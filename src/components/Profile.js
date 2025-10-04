@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useEffect} from "react";
 const Profile =(props)=>{
     const [count]=useState(0);
     const [count2]=useState(0);
