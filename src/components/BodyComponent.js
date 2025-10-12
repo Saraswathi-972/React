@@ -1,9 +1,10 @@
-import RestaurantsComponent from "./RestaurantsComponent";
+import RestaurantsComponent,{withPromotedLabel} from "./RestaurantsComponent";
 import {resList} from "../../utils/mockData";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Shimmmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../../utils/useOnlineStatus";
+import UserContext from "../../utils/userContext";
 
 const BodyComponent=()=>{
     const [listOfRestaurants,setListOfRestaurants]=useState([]);
@@ -22,6 +23,8 @@ const BodyComponent=()=>{
     };
     
     const onlineStatus=useOnlineStatus();
+    const {loggedInUser,setUserName}=useContext(UserContext);
+    const PromotedRestaurants=withPromotedLabel(RestaurantsComponent)
     
     if(onlineStatus===false)return <h1>🔴Offline,Please check your internet connection!! </h1>;
     //conditional rendering
@@ -43,10 +46,15 @@ const BodyComponent=()=>{
                 console.log(filteredList)
                 setFilteredList(filteredList)
             }}>Top Rated Restaurants</button>
+            <div>
+            <label>User Name</label>
+            <input className="user-input" value={loggedInUser} onChange={(e)=>setUserName(e.target.value)}></input>
+            </div>
            </div>
-           <div className="res-container">
+           
+           <div className="user-container">
             {filteredList.map((restaurant,index)=>{
-                return <Link key={restaurant.id} to={"/restaurant/"+index}><RestaurantsComponent key={index} resData={restaurant}/></Link>;
+                return <Link key={restaurant.id} to={"/restaurant/"+index}> {restaurant.promoted?<PromotedRestaurants key={index} resData={restaurant}/>:<RestaurantsComponent key={index} resData={restaurant}/>}</Link>;
             })}
           </div>
 

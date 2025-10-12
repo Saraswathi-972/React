@@ -84,3 +84,18 @@
     margin: 10px;
 }
 
+.promoted-class{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 130px;
+    border-radius: 5px;
+}
+
+.user-container{
+    display: flex;
+    flex-wrap: wrap;
+}

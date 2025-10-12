@@ -21,4 +21,15 @@ const RestaurantsComponent=(props)=>{
     );
 }
 
+export const withPromotedLabel=(RestaurantsComponent)=>{
+    return(props)=>{
+        return(
+            <div>
+                <label className="promoted-class">Promoted</label>
+                <RestaurantsComponent {...props}/>
+            </div>
+        )
+    }
+}
+
 export default RestaurantsComponent;

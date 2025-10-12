@@ -209,3 +209,16 @@ await pauses execution until the fetch resolves, so your code looks synchronous
 6.postcss - a tool for transforming CSS with javascript and used to understand what's written with tailwind css
 7.use npm install -D tailwindcss postcss
 8.we need to cretae tailwind.config.js and .psotcssrc files manually and provide configurations
+
+# Episode - 11
+1.Higher order component is a function which takes component as input and returns a component.It's a normal Javascript function
+2.Learn about Accordian
+3.Reac developers tools extension allows you to see components and profiler
+4.Lifting the state up in react
+5.props drilling
+6.createContext -if you wnat use that data in multiple places
+7.In case of class based components we need to use <UserContext.Consumer> tag for accessing context data
+8.UserContext.Provider can be used to pass the user context value - refer App.js
+9.Context is a global space we can create multiple contexts and use in our app
+10.UserContext.Provider tag is used to set context at app/js component level i.e root level
+11.Learn about redux Vs context
