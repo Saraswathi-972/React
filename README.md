@@ -222,3 +222,38 @@ await pauses execution until the fetch resolves, so your code looks synchronous
 9.Context is a global space we can create multiple contexts and use in our app
 10.UserContext.Provider tag is used to set context at app/js component level i.e root level
 11.Learn about redux Vs context
+
+# Episode-12
+1.Redux is a state management library for javascript applications mainly used with React.
+2.Redux store and manages the entire applications state at central place(called state). so that every component can access the data it needs without passing props through manually to manu layers.
+Why Redux?
+
+When your app grows, managing data and communication between components becomes hard.
+Redux helps by giving you:
+
+✅ Single Source of Truth: One centralized store for all your app’s state.
+
+✅ Predictable State Updates: State can only be changed in a controlled way (via actions and reducers).
+
+✅ Easy Debugging: Time-travel debugging and predictable state transitions.
+
+✅ Better Testing & Maintenance: Logic is centralized and isolated from components.
+
+3.When we click on the add button for food to cart it dispacthes an action and this actions calls function and this function modifies the slice of the redux store. This function is called reducer function.
+4.Selector - to read the data from store and it will modify our component (subscribing to the store)
+5.Install @reduxjs/toolkit and react-redux
+6.We need to provide our store to the application(App.js)
+7.Selector is a hook in react
+8.UseDispatch() is a hook which gives access to the dispatch
+ const dispatch= UseDispatch();
+ dispatch(addItem("biryani"))
+
+ # Episode 13
+ 1.There 3 types of testing we can do we react
+   Unit testing - test react components in isolation (testing just header component)
+   Integration testing - testing the integration of components (multpie components intetracting with each other)
+   End to end testing - testing the application from user login to logout - end to end
+2.Will use react testing library for this
+3.React testing library uses jest-delightful javascript testing library
+4. npm i -D @testing-library/react
+   npm i -D jest

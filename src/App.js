@@ -9,6 +9,8 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "../utils/userContext";
 //import Grocery from "./components/Grocery";
+import { Provider } from "react-redux";
+import appStore from "../utils/appStore";
 
 const AppComponent = ()=>{
     const [userName,setUserName]=useState();
@@ -16,12 +18,16 @@ const AppComponent = ()=>{
        setUserName("Saraswathi");
     },[])
     return (
-        <div> 
+        <Provider store={appStore}>
         <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
-        <AppHeader></AppHeader>
-        <Outlet/>
+           <div> 
+            <AppHeader></AppHeader>
+            <Outlet/>
+          </div>
         </UserContext.Provider>
-        </div>
+       </Provider>
+
+       
     );
 };
 
