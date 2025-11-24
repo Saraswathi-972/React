@@ -257,3 +257,13 @@ Redux helps by giving you:
 3.React testing library uses jest-delightful javascript testing library
 4. npm i -D @testing-library/react
    npm i -D jest
+   npm install --save-dev babel-jest @babel/core @babel/preset-env
+   babel.config.js
+       module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+
+.parcelrc file configuration to disable default babel transpilation
+jest configuration-npx jest --init
+npx create-jest@latest
+npm i --save-dev jest-environment-jsdom

@@ -105,3 +105,12 @@
     font-weight: bold;
     margin-right: 20px;
 }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+    margin: auto;
+}
